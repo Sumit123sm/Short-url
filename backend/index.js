@@ -41,7 +41,7 @@ app.post("/api/short", async (req, res) => {
     const url = new Url({ originalUrl, shortUrl });
     await url.save();
 
-    const myUrl = `http://localhost:3000/${shortUrl}`;
+    const myUrl = `https://frontend-url-shorten.onrender.com//${shortUrl}`;
 
     const qrCodeImg = await QRCode.toDataURL(myUrl);
 

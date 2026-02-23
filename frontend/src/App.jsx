@@ -19,7 +19,7 @@ export default function App() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/short",
+        "https://frontend-url-shorten.onrender.com//api/short",
         { originalUrl }
       );
 
