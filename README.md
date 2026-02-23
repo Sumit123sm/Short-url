@@ -68,13 +68,13 @@ Vite runs on `http://localhost:5173` by default.
 ## API
 - `POST /api/short`
   - Body: `{ "originalUrl": "https://example.com" }`
-  - Response: `{ "message": "URL Generated", "shortUrl": "https://frontend-url-shorten.onrender.com//<id>", "qrCodeImg": "data:image/png;base64,..." }`
+  - Response: `{ "message": "URL Generated", "shortUrl": "https://frontend-url-shorten.onrender.com/<id>", "qrCodeImg": "data:image/png;base64,..." }`
 
 - `GET /:shortUrl`
   - Redirects to the original URL
 
 ## Notes
-- The backend builds short URLs using `https://frontend-url-shorten.onrender.com//<id>`.
+- The backend builds short URLs using `https://frontend-url-shorten.onrender.com/<id>`.
 - CORS is enabled for local development.
 
 ## Screenshots
